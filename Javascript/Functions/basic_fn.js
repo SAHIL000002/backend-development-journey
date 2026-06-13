@@ -129,7 +129,7 @@ add(10,2); // output : 12
 // store multiple values in an single  array
 
 function abcd(...val){
-    colsole.log(val); 
+    console.log(val); 
 }
 abcd(1,2,3,4,5,6); // output : [1, 2, 3, 4, 5,6]
 
@@ -145,3 +145,79 @@ function add(V) {
 }
 let result = add(10); // result is a variable which will store the return value of add function
 console.log(result); // output : 22
+
+// PURE AND IMPURE FUNCTIONS
+
+// pure function means jo bahar ki value ko change nhi karta.
+
+// impure function means jo bahar ki value ko change karta h.
+
+let a = 12;
+function abcd(){
+    console.log(a); // pure function kyuki ye bahr ki value ko change nhi kr rahi h.
+}
+
+function hui(){
+    a++; // impure function because it is changing the value of a mtlb ye bahar ki value ko change kr rahi h.
+}
+
+// FIRST CLASS FUNCTIONS
+
+// first class functions mtlb functions ko treat kiya jata h as a value.
+
+// 1. A function can be stored in a variable    
+
+let fnc = function () {
+    console.log("hello world");
+}
+fnc(); // output : hello world
+
+// 2. A function can be stored in an array
+
+let arr = function () { 
+    console.log("hello world");
+}
+let arr1 = [arr];
+arr1[0](); // output : hello world
+
+// 3. A function can be stored in an object
+
+let obj = {
+    fnc : function () { 
+        console.log("hello world");
+    }
+}
+obj.fnc(); // output : hello world
+
+// CLOSURES AND LEXICAL SCOPING
+
+// #CLOSURE
+
+// closure means ek function jo return kare ek aur function and return hone wala function hamesha use karega parent function ka koi variable.
+
+function abcd(){
+    let a= 12;
+    return function(){
+        console.log(a); // output : 12
+    }
+}
+
+// #LEXICAL SCOPING
+
+// lexical scoping means ek function ke andar jo variable define kiya jata h wo function ke andar hi accessible hoga aur bahar se access nhi kiya ja sakta. 
+
+// and inner functionapne parent function ke variable ko access kar sakta h but parent function apne child function ke variable ko access nhi kar sakta h.
+
+function abcd(){
+    let a = 12;
+    console.log(a); // output : 12
+    function defg(){
+        let b= 4;
+        console.log(a,b); // output : 12 4  this also possible because of the lexical scoping
+        function ghij(){
+            let c= 2;
+            console.log(a,b,c); // output : 12 4 2   this is possible because there exist lexical scoping
+        }
+    }
+}
+
