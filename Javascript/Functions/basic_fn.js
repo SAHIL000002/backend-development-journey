@@ -212,7 +212,7 @@ function abcd(){
     let a = 12;
     console.log(a); // output : 12
     function defg(){
-        let b= 4;
+        let b= 4;    
         console.log(a,b); // output : 12 4  this also possible because of the lexical scoping
         function ghij(){
             let c= 2;
@@ -221,3 +221,8 @@ function abcd(){
     }
 }
 
+// IIFE (IMMEDIATLY INVOKE FUNCTION EXPRESSION )
+
+(function(){    
+    console.log("hello world"); // output : hello world
+})();                  
