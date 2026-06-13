@@ -83,3 +83,10 @@ true + false; // 1
 null + 1; // 1 because null is treated as 0 in arithmetic operations.
 5+"5"; // "55" because number 5 is converted to string "5" and then concatenated. 
 !!undefined; // false because undefined is a falsy value.
+
+
+//  ALERT AND PROMPT
+
+alert("something is wrong"); // it shows an alert box with the given message.
+
+let name = prompt("enter your name : "); // it shows a prompt box with the given message and takes input from the user and stores it in the variable name.

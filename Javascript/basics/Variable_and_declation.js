@@ -96,6 +96,7 @@ function demo2() {
 demo2()
 
 // TEMPORAL DEAD ZONE
+
 //  1. var
 
 console.log(a); // undefined because of hoisting 
@@ -124,6 +125,7 @@ console.log(c); // it shows  ReferenceError: Cannot access 'c' before initializa
 
 
 const c = 30;
+
 
 // HOISTING OF VAR, LET AND CONST 
 
