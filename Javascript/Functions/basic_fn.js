@@ -226,3 +226,4 @@ function abcd(){
 (function(){    
     console.log("hello world"); // output : hello world
 })();                  
+
