@@ -52,41 +52,96 @@ months.splice(1, 2); // it remove the elements starting from index 1 and remove 
 
 console.log(months); // output : ['jan', 'april', 'may', 'june']
 
-// 6. slice
+// 6. slice()
 
 let e = [1, 2, 3, 4, 5];
 console.log(e.slice(1, 4)); // output : [2, 3, 4]
 // start from index 1 and end to index 3(4-1)
 
-//  7. index0f
+//  7. index0f()
 
 let f = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 console.log(f.indexOf(6));  // output : 5
 
-// 8. reverse 
+// 8. reverse ()
 
 let g = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 console.log(g.reverse()); // output : [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
 
-// 9. sort
+// 9. sort()
 
-let h = [4,5,2,8,4,3];
+let h = [4, 5, 2, 8, 4, 3];
 console.log(h.sort());
 
 // sort in ascending order
 
-let sorted = h.sort(function(a,b){
-    return a-b;
+let sorted = h.sort(function (a, b) {
+    return a - b;
 })
 console.log(sorted);
 
 // sort in decending order
 
-let reversSorted = h.sort(function(a,b){
-    return b-a;
+let reversSorted = h.sort(function (a, b) {
+    return b - a;
 })
 console.log(reversSorted);
 
-// 10. forEach
+// 10. forEach()
 
+let i = [11, 3, 5, 64, 3];
+
+i.forEach(function (val) {  // foreach her ek element ke liye function ko chalata h.
+    console.log(val);
+})
+
+// if we write this
+i.forEach(function (val) {
+    console.log(val + 5); // array ke her element me 5 jod dega
+})
+
+// 11. map()
+
+let arr1 = [1, 2, 3, 4, 5];
+
+// map sirf tb use karna hai jab ek naya array banana h pichhle array ke data ke basis per
+
+// let suppose hame diye gye array ke elements ka squre nikalna h aur use ek array me store krna h than...
+
+let newArr = arr1.map(function(val){ 
+    return val*val; // Note : jo value return hogi wahi sirf new array me store hogi.    
+})
+console.log(newArr);
+
+// cases for map 
+
+// 1.
+let arr2 = [11,4,3,5,43,21];
+
+let newArr2 = arr.map(function(val){
+    return 12; 
+})
+
+console.log(newArr2); // it return only 12 so the new array only contains 12 5 times.
+// output : [12, 12, 12, 12, 12]
+
+// 2. 
+
+let arr3 = [1, 2, 3, 4, 5];
+
+let newArr3 = arr3.map(function(val){
+    
+})
+console.log(newArr3); // it prints undefined 5 times because no any value return in the new array
+// output : [undefined, undefined, undefined, undefined, undefined]
+
+// 3. 
+
+let arr4 = [1, 2, 3, 4, 5];
+
+let newArr4 = arr4.map(function(val){
+    if (val>3) return val;  // it return the value that is greater than three and if the number is not greater then 3 than at that pace it store undefined.
+})
+
+console.log(newArr4); // output : [undefined, undefined, undefined, 4, 5]
 
