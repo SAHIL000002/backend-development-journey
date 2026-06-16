@@ -226,7 +226,7 @@ let asd = [1,2,3,4,5,6,7,8,9];
 let asd2 = [...asd];
 console.log(asd2);
 
-//if we make any changes in the asd2 than it does not effect on the main array
+//if we make any changes in the asd2 than it does not affect on the main array
 let asd3 = [1,2,3,4,5,6,7,8,9];
 let asd4 = [...asd3];
 asd4[0]=100;
