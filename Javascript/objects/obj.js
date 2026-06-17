@@ -95,7 +95,7 @@ console.log(obj3);  //
 console.log(obj1 === obj3); // false
 
 
-// inportant : it an object is nested than do not use spread opetator to copy the values because the if we change the value of the nested object that it change the original object value 
+// inportant : if an object is nested than do not use spread opetator to copy the values because the if we change the value of the nested object that it change the original object value 
 
 let obj4 = {
     name: "sahil",
