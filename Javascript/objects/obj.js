@@ -42,7 +42,7 @@ console.log(lng);  // 44.5
 // LOOPING
 
 // syntax
-// for(let key in object_name){
+// 1. for(let key in object_name){
 //     // write your logic
 // }
 // example
@@ -69,7 +69,7 @@ for (let key in data) {
     console.log(key, data[key]);
 }
 
-//  object.keys()
+//  2. object.keys()
 
 // syntax :  Object.keys(object_name)
 
@@ -82,6 +82,24 @@ let obj1 = {
 
 let keys1 = Object.keys(obj1); // return all the keys in the object in an array
 console.log(keys1);
+
+// 3. object.values()
+
+let user1 = {
+    name:"sahil",
+    age : 20,
+    city:"gorkhpur"
+};
+console.log(Object.values(user1)); // return all values in an array   ['sahil', 20, 'gorkhpur']
+
+// 4. object.entries()
+
+const user2 = {
+    name : "sahil",
+    age : 20,
+    city:"gorkhpur"
+};
+console.log(Object.entries(user2)); // return all key and values in arrays
 
 // spread in objects
 
@@ -121,6 +139,25 @@ console.log(obj4);
 
 // optional  chaining
 
+const users = {
+  name: "Sahil",
+  address: {
+    city: "Gorakhpur"
+  }
+};
+console.log (users?.address?.city); // Gorakhpur |  no error because there is no any error in the code
+console.log(users?.address?.town);  // undefined because there no any property name town in the object
+
+// other examples 
+
+const userss = [
+  { name: "Sahil" }
+];
+
+console.log(userss[0]?.name); // sahil
+console.log(userss[1]?.name); // undefined
+
+console.log(user.address?.city);
 
 let obj12 = {
     name: "harsh",
