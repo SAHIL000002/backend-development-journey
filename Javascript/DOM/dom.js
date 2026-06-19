@@ -112,7 +112,7 @@ img.setAttribute("src" , "https://images.unsplash.com/photo-1777646378295-c121ec
 //   create element 
 // it creates a new HTML element in memery . it does not appear on the webpage untill it is added to the the DOM.
 
-// append / prepend karo jaha bhi element chahiye waha
+// append/prepend karo jaha bhi element chahiye waha
 
 const p = document.createElement("p");
 p.innerText = "this is new paragraph";
@@ -143,7 +143,9 @@ document.body.prepend(her);   // it show the top of the web page
 
 let h1 = document.createElement("h1");
 h1.textContent = "hey mai bahar se aaya hu";
-document.querySelector("div").appendChild(h1);
+document.querySelector("div").appendChild(h1); // this is the way where you want to add the element you add it 
+
+
 
 // style updates via .style and classList (add , remove , toggle)
 
@@ -154,7 +156,7 @@ const get = document.querySelectorAll("h1");
 // get.style.color = "red";  // get error kyuki get ek nodelist hai kyuki selectAll use kiya gya h 
 // to make changes in multiple elements we have to use loop 
 
-get.forEach(function(val){   // multiple changes ke liye loop lagana padega 
+get.forEach(function(val){   // nodelist per changes ke liye loop lagana padega 
     val.style.color = "red";
     val.style.fontFamily = "gilroy";
     val.style.fontSize = "40px";
@@ -181,3 +183,18 @@ section.classList.remove("section");  // removes the class name
 // toggle means it reverse the changes means is proprty lgi hai to hata do agr nhi lagi to laga do.
 
 pp.classList.toggle("huihui");
+
+
+
+let new1 = document.createElement("h4");
+new1.innerText = "i am new at the last";
+document.body.append(new1);
+new1.style.color = "green";
+new1.style.textTransform = "uppercase";
+
+// new1.setAttribute("id", "newid");
+// console.log(new1.getAttribute("id"));
+
+
+new1.classList.add("hellooooo"); // add class to h4 element
+
