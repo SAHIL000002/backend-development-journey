@@ -77,7 +77,7 @@ console.log(h3.innerText);
 
 // 1 . getAttribute()
 let a = document.querySelector("p");
-console.log(a.getAttribute("id")); // returns the value of the href means whaat you write in the href
+console.log(a.getAttribute("id")); // returns the value of the id means whaat you write in the id
 
 // 2. setAttribute()
 // syntax : element.setAttribute("name", "value");

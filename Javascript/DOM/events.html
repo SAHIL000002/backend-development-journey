@@ -1,13 +1,145 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae commodi omnis a cupiditate laboriosam eum nam necessitatibus fugit accusamus vero?</p>
-    
-</body>
-<script src="eventAndEventListener.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Gilroy";
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
+
+      #main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        background-color: #222;
+      }
+      #h1 {
+        color: #555;
+        font-size: 10rem;
+      }
+
+      .inpt {
+        display: none;
+      }
+
+      #btn {
+        padding: 12px 22px;
+        background-color: red;
+        color: white;
+        font-weight: 600;
+        border-radius: 30px;
+      }
+
+      #btn:hover {
+        background-color: royalblue !important;
+      }
+
+      input {
+        display: block;
+      }
+
+      #main2 {
+        padding: 50px;
+        width: 100%;
+        height: 100%;
+        background-color: #222;
+      }
+
+      .card {
+        max-width: 300px;
+        color: #fff;
+        margin: 40px;
+        padding: 20px;
+        border: 2px solid #e3e3e3;
+        display: inline-block;
+        border-radius: 10px;
+        border: 1px solid #555;
+      }
+      .card h4 {
+        margin-top: 5px;
+      }
+
+      .profile {
+        width: 50px;
+        height: 50px;
+        /* background-color: red; */
+        border-radius: 50%;
+        margin-bottom: 7px;
+        overflow: hidden;
+      }
+
+      .profile img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main2">
+      <form id="form">
+        <input class="form" type="text" placeholder="profile pic" />
+        <input class="form" type="text" placeholder="name" />
+        <input class="form" type="text" placeholder="occupation" />
+        <input class="form" type="text" placeholder="info" />
+        <input class="form" type="submit" />
+      </form>
+
+      <!-- <div class="card">
+        <div class="profile">
+          <img
+            src="https://images.unsplash.com/photo-1566590393124-c34c2052f455?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fGJlYWNoJTIwZ2lybHxlbnwwfHwwfHx8MA%3D%3D"
+            alt=""
+          />
+        </div>
+        <h2>Ana Labby</h2>
+        <h4>creative coder</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi libero
+          aut esse consequuntur natus itaque corporis expedita quisquam
+          reprehenderit vero.
+        </p>
+      </div>
+    </div> -->
+
+    <input id="username" type="text" placeholder="enter username" />
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae commodi
+      omnis a cupiditate laboriosam eum nam necessitatibus fugit accusamus vero?
+    </p>
+
+    <input type="text" placeholder="enter name" />
+    <input id="inp2" type="text" placeholder="anything..." />
+    <input id="inp3" type="text" />
+
+    <h1 id="device">SELECT YOUR DEVICE</h1>
+    <select>
+      <option selected disabled>Choose your device</option>
+      <option value="samsung">Samsung</option>
+      <option value="apple">iPhone</option>
+      <option value="mi">Xiomi</option>
+      <option value="oppo">Oppo</option>
+    </select>
+    <!-- <div id="main">
+        <h1 id="h1">A</h1>
+    </div> -->
+    <div id="main">
+      <input class="inpt" id="original_btn" type="file" />
+      <div id="btn">Upload File</div>
+    </div>
+  </body>
+  <script src="eventAndEventListener.js"></script>
 </html>
