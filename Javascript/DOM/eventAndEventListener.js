@@ -25,8 +25,8 @@ f.addEventListener("dblclick", function () {
 
 // f.addEventListener("click", function(){
 //     f.style.color = "green";
-// })
-// agr code is format me likha h toh eventListener remove nhi hoga 
+// })                                  
+// agr code es format me likha h toh eventListener remove nhi hoga 
 
 
 function click() {
@@ -114,9 +114,13 @@ original.addEventListener("change", function (details) {
 // form 
 
 let inputs = document.querySelectorAll(".form");
+inputs.forEach((val =>{
+    val.setAttribute("required" , true);
+}))
 let form = document.querySelector("form");
 form.addEventListener("submit", function (dets) {
-    dets.preventDefault();
+    dets.preventDefault(); // prevent from reloading.
+
     console.log(inputs[0].value, inputs[1].value, inputs[2].value, inputs[3].value);
 
     let card = document.createElement("div");
