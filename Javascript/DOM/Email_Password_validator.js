@@ -4,6 +4,7 @@
 let form = document.querySelector("form");
 let email = document.querySelector("#email");
 let password = document.querySelector("#password");
+// let after_submit = document.querySelector("#after_submit");
 
 form.addEventListener("submit", function (dets) {
     dets.preventDefault();
@@ -26,8 +27,11 @@ form.addEventListener("submit", function (dets) {
         document.querySelector("#password-error").textContent = "Password is incorrect";
         console.log(passwordAns);
     }
-    if (emailAns &&passwordAns){
+    if (emailAns && passwordAns){
         document.querySelector("#after_submit").textContent = "Form is submitted";
+        document.querySelector("#after_submit").style.color = "green";
     }
+    
+    
 
 })
