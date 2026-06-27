@@ -3,6 +3,9 @@
 // permanant storage of a browser which has the capacity if 5-10mb.
 //LocalStorage data permanently store karta hai jab tak manually remove na kiya jaye.
 
+// IMPORTANT : local storage mein sirf string format mein data store hota hai. array objects etc storre nhi hota, esliye unhe string banakar store krte hai.
+// JSON.stringiify(JSON.parse()) // eska use krenge array object etc ko string banane ke liye
+
 // operations : 
 // 1. store data - setItem
 // 2. retrive/fetch data - getItem
@@ -25,6 +28,10 @@ localStorage.setItem("name" , "aryan"); // update item -> basically it override 
 localStorage.clear(); // delete all data from the browser
 
 
+localStorage.setItem("student", JSON.stringify(["sahil", "aryan", "shivam"]));
+console.log(JSON.parse(localStorage.getItem("student"))); // fetch array data
+
+
 
 
 // SESSION STORAGE
@@ -37,7 +44,7 @@ localStorage.clear(); // delete all data from the browser
 sessionStorage.setItem("name" , "sahil"); // storing data 
 sessionStorage.setItem("age" , 23);
 
-let val = localStorage.getItem("name"); // fetching data
+let val1 = localStorage.getItem("name"); // fetching data
 
 sessionStorage.removeItem("age") // remove item
 
@@ -64,3 +71,5 @@ sessionStorage.clear(); // delete all data from the browser
 
 // it store small amount od data and we can set the exipy time for the cookies.
 // cookies ke through hum backend se bhi communicate kar sakte hain.
+
+document.cookie=("usr = sahil");
