@@ -1,0 +1,556 @@
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    background:#262626;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    min-height:100vh;
+
+}
+
+
+/* ===========================
+   MAIN WRAPPER
+=========================== */
+
+.wrapper{
+
+    display:flex;
+    align-items:center;
+    gap:35px;
+
+}
+
+
+/* ===========================
+   LEFT BUTTONS
+=========================== */
+
+.controls{
+
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+
+}
+
+.controls button{
+
+    width:55px;
+    height:55px;
+
+    border:none;
+    border-radius:50%;
+
+    background:#313131;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    transition:.3s;
+
+}
+
+.controls button:hover{
+
+    background:#4b4b4b;
+
+}
+
+
+/* ===========================
+   CARD AREA
+=========================== */
+
+.cards{
+
+    position:relative;
+
+    width:340px;
+
+    height:300px;
+
+}
+
+
+/* ===========================
+   CARD
+=========================== */
+
+.card{
+
+    position:absolute;
+    inset:0;
+
+    background:#2f2f2f;
+
+    border-radius:22px;
+
+    padding:22px;
+
+    color:white;
+
+    transition:.4s;
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+
+/* Visible Card */
+
+.active{
+
+    transform:translateY(0);
+
+    z-index:5;
+
+}
+
+
+/* Second Card */
+
+.next1{
+
+    transform:translateY(12px);
+
+    opacity:.65;
+
+    z-index:4;
+
+}
+
+
+/* Third Card */
+
+.next2{
+
+    transform:translateY(24px);
+
+    opacity:.35;
+
+    z-index:3;
+
+}
+
+
+/* Hidden Cards */
+
+.hide{
+
+    transform:translateY(40px);
+
+    opacity:0;
+
+    z-index:1;
+
+}
+
+
+/* ===========================
+   PROFILE
+=========================== */
+
+.card img{
+
+    width:60px;
+    height:60px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
+.card h2{
+
+    margin-top:12px;
+
+    font-size:30px;
+
+    font-weight:600;
+
+}
+
+
+/* ===========================
+   DETAILS
+=========================== */
+
+.details{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-top:15px;
+
+}
+
+.details span{
+
+    font-size:13px;
+
+    color:#cfcfcf;
+
+}
+
+.details p{
+
+    margin-top:5px;
+
+}
+
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.btns{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:22px;
+
+}
+
+.btns button{
+
+    border:none;
+
+    cursor:pointer;
+
+    background:none;
+
+    color:white;
+
+    font-size:15px;
+
+}
+
+.call{
+
+    background:black !important;
+
+    padding:10px 18px;
+
+    border-radius:30px;
+
+}
+
+.message{
+
+    color:#fff;
+
+}
+
+
+/* ===========================
+   COLOR DOTS
+=========================== */
+
+.colors{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.colors span{
+
+    width:22px;
+
+    height:22px;
+
+    border-radius:50%;
+
+}
+
+.black{
+
+    background:#000;
+
+}
+
+.purple{
+
+    background:#5c1fff;
+
+}
+
+.brown{
+
+    background:#7a4300;
+
+}
+
+.green{
+
+    background:#20b89c;
+
+}
+
+
+/* ===========================
+   POPUP
+=========================== */
+
+.popup{
+
+    position: relative;
+
+    inset:0;
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(0,0,0,.55);
+
+    z-index:999;
+
+}
+
+
+/* ===========================
+   FORM
+=========================== */
+
+.form-container{
+
+    width:430px;
+
+    background:#2f2f2f;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    box-shadow:0 15px 45px rgba(0,0,0,.25);
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+.form-container h2{
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+    font-size:28px;
+
+    color:white;
+
+}
+
+
+/* ===========================
+   INPUTS
+=========================== */
+
+.input-box{
+
+    margin-bottom:18px;
+
+}
+
+.input-box label{
+
+    display:block;
+
+    margin-bottom:6px;
+
+    color:#cfcfcf;
+
+    font-size:14px;
+
+    font-weight:500;
+
+}
+
+.input-box input{
+
+    width:100%;
+
+    padding:13px 15px;
+
+    border-radius:10px;
+
+    border:1px solid rgba(255,255,255,.15);
+
+    outline:none;
+
+    font-size:15px;
+
+    background:#1f1f1f;
+
+    color:white;
+
+}
+
+.input-box input:focus{
+
+    border-color:#888;
+
+}
+
+
+/* ===========================
+   CATEGORY
+=========================== */
+
+.category{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-top:10px;
+
+}
+
+.chip{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:10px 15px;
+
+    border-radius:30px;
+
+    border:2px solid rgba(255,255,255,.15);
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    color:white;
+
+}
+
+.chip:hover{
+
+    background:#3d3d3d;
+
+}
+
+.chip input{
+
+    accent-color:#fff;
+
+}
+
+
+/* ===========================
+   FORM BUTTONS
+=========================== */
+
+.create-btn{
+
+    width:100%;
+
+    padding:14px;
+
+    margin-top:10px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#111;
+
+    color:white;
+
+    font-size:15px;
+
+    cursor:pointer;
+
+}
+
+.close-btn{
+
+    width:100%;
+
+    padding:14px;
+
+    margin-top:12px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#ff4d4d;
+
+    color:white;
+
+    cursor:pointer;
+
+}
+
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+.wrapper{
+
+    flex-direction:column;
+
+}
+
+.colors{
+
+    flex-direction:row;
+
+}
+
+.controls{
+
+    flex-direction:row;
+
+}
+
+.cards{
+
+    width:320px;
+
+}
+
+.form-container{
+
+    width:90%;
+
+}
+
+}

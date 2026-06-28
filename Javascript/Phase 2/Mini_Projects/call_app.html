@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Notes UI</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="call_app.css">
+</head>
+<body>
+
+<div class="wrapper">
+
+    <!-- LEFT CONTROLS -->
+
+    <div class="controls">
+
+        <button id="addBtn">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+
+        <button id="upBtn">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
+
+        <button id="downBtn">
+            <i class="fa-solid fa-arrow-down"></i>
+        </button>
+
+    </div>
+
+
+    <!-- CARD STACK -->
+
+    <div class="cards">
+
+        <!-- Card 1 -->
+
+        <!-- <div class="card active">
+
+            <img src="https://i.pravatar.cc/100?img=12">
+
+            <h2>Fatima Uma</h2>
+
+            <div class="details">
+
+                <div>
+                    <span>Home Town</span>
+                    <p>Singapore</p>
+                </div>
+
+                <div>
+                    <span>Bookings</span>
+                    <p>3 Times</p>
+                </div>
+
+            </div>
+
+            <div class="btns">
+
+                <button class="call">
+                    <i class="fa-solid fa-phone"></i>
+                    Call
+                </button>
+
+                <button class="message">Message</button>
+
+            </div>
+
+        </div> -->
+
+
+        <!-- Card 2 -->
+
+        <!-- <div class="card next1">
+
+            <img src="https://i.pravatar.cc/100?img=22">
+
+            <h2>John Smith</h2>
+
+            <div class="details">
+
+                <div>
+                    <span>Home Town</span>
+                    <p>London</p>
+                </div>
+
+                <div>
+                    <span>Bookings</span>
+                    <p>5 Times</p>
+                </div>
+
+            </div>
+
+        </div> -->
+
+
+        <!-- Card 3 -->
+
+        <!-- <div class="card next2">
+
+            <img src="https://i.pravatar.cc/100?img=32">
+
+            <h2>Emma Stone</h2>
+
+            <div class="details">
+
+                <div>
+                    <span>Home Town</span>
+                    <p>Canada</p>
+                </div>
+
+                <div>
+                    <span>Bookings</span>
+                    <p>2 Times</p>
+                </div>
+
+            </div>
+
+        </div> -->
+
+
+        <!-- Hidden Cards -->
+
+        <div class="card hide">
+
+            <img src="https://i.pravatar.cc/100?img=42">
+            <h2>Alex</h2>
+
+        </div>
+
+        <div class="card hide">
+
+            <img src="https://i.pravatar.cc/100?img=52">
+            <h2>Sophia</h2>
+
+        </div>
+
+        <div class="card hide">
+
+            <img src="https://i.pravatar.cc/100?img=62">
+            <h2>David</h2>
+
+        </div>
+
+    </div>
+
+
+    <!-- RIGHT COLORS -->
+
+    <div class="colors">
+
+        <span class="black"></span>
+        <span class="purple"></span>
+        <span class="brown"></span>
+        <span class="green"></span>
+
+    </div>
+
+</div>
+
+
+
+<!-- ================= POPUP FORM ================= -->
+
+<div class="popup" id="popup">
+
+    <div class="form-container">
+
+        <h2>New Call</h2>
+
+        <form id="callForm">
+
+            <div class="input-box">
+                <label>Image URL</label>
+                <input id="imageUrl" required type="text" placeholder="https://example.com/image.jpg">
+            </div>
+
+            <div class="input-box">
+                <label>Full Name</label>
+                <input id="fullName" required type="text" placeholder="Enter full name">
+            </div>
+
+            <div class="input-box">
+                <label>Home Town</label>
+                <input id="homeTown" required type="text" placeholder="Enter home town">
+            </div>
+
+            <div class="input-box">
+                <label>Purpose</label>
+                <input id="purpose" required type="text" placeholder="Purpose of call">
+            </div>
+
+            <div class="input-box">
+
+                <label>Category</label>
+
+                <div class="category">
+
+                    <label class="chip">
+                        <input type="radio" name="category">
+                        Emergency
+                    </label>
+
+                    <label class="chip">
+                        <input type="radio" name="category">
+                        Important
+                    </label>
+
+                    <label class="chip">
+                        <input type="radio" name="category">
+                        Urgent
+                    </label>
+
+                    <label class="chip">
+                        <input type="radio" name="category">
+                        No Rush
+                    </label>
+
+                </div>
+
+            </div>
+
+            <button type="submit" class="create-btn">
+                Create Note
+            </button>
+
+            <button type="button" class="close-btn">
+                Close
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="call_app.js"></script>
+
+</body>
+</html>
