@@ -97,11 +97,11 @@ card.classList.add("card", "active");
 
 // Image
 const img = document.createElement("img");
-img.src = "https://i.pravatar.cc/100?img=12";
+img.src = task.imageUrl;
 
 // Name
 const heading = document.createElement("h2");
-heading.textContent = "Fatima Uma";
+heading.textContent = task.fullName;
 
 // Details Container
 const details = document.createElement("div");
@@ -114,7 +114,7 @@ const homeSpan = document.createElement("span");
 homeSpan.textContent = "Home Town";
 
 const homePara = document.createElement("p");
-homePara.textContent = "Singapore";
+homePara.textContent = task.homeTown;
 
 homeDiv.append(homeSpan, homePara);
 
@@ -122,10 +122,10 @@ homeDiv.append(homeSpan, homePara);
 const bookingDiv = document.createElement("div");
 
 const bookingSpan = document.createElement("span");
-bookingSpan.textContent = "Bookings";
+bookingSpan.textContent = "Purpose";
 
 const bookingPara = document.createElement("p");
-bookingPara.textContent = "3 Times";
+bookingPara.textContent = task.purpose;
 
 bookingDiv.append(bookingSpan, bookingPara);
 
