@@ -55,21 +55,11 @@ sessionStorage.clear(); // delete all data from the browser
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 // COOKIES
 
-// it store small amount od data and we can set the exipy time for the cookies.
+// it store small amount of data and we can set the exipy time for the cookies.
 // cookies ke through hum backend se bhi communicate kar sakte hain.
 
-document.cookie=("usr = sahil");
+document.cookie=("usr = sahil");   
+
+document.cookie=("usr = sahil; expires = Thu, 18 Dec 2025 12:00:00 UTC");

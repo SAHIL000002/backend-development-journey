@@ -90,7 +90,7 @@ abcd.apply(obj2, [1, 2, 3]);
 
 // 3.bind 
 
-// ye ak myi copy bana deta hai fnc ka 
+// ye ak nyi copy bana deta hai fnc ka 
 
 abcd.bind(obj ,1,2,3); // ye kuch bhi print nhi karega
 
