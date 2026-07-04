@@ -1,11 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Person Card</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="min-h-screen bg-gray-100 flex flex-col items-center justify-center gap-6 py-8">
+      <div class=" users card flex flex-row flex-wrap items-center justify-center gap-6"></div>
+      
+      <button id="reloadBtn" class="px-10 py-4 bg-indigo-500 hover:bg-indigo-600 active:scale-95 text-white text-xl font-semibold rounded-2xl shadow-md transition-all">
+        🔄 Refresh
+      </button>
+    </div>
+    <script src="card.js"></script>
+  </body>
 </html>
