@@ -24,3 +24,25 @@ async function abcd(){
 
 abcd(); 
 
+// another example
+
+function getData() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve("Data aa gaya");
+        }, 3000);
+    });
+}
+
+async function demo() {
+    console.log("1");
+
+    const data = await getData();
+
+    console.log(data);
+    console.log("2");
+}
+
+demo();
+
+console.log("3");
