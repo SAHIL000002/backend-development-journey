@@ -1,3 +1,5 @@
+//  mongodb password : xDZbv1EpTEBjuqEY
+
 // this is for creating server
 
 const express = require("express");
@@ -9,6 +11,9 @@ const notes = [];
 
 // title , description
 
+
+// frontend data bhej raha hai backend per...
+
 app.post("/notes", (req, res) => {   // we create a api name : notes
   notes.push(req.body);
 
@@ -16,6 +21,8 @@ app.post("/notes", (req, res) => {   // we create a api name : notes
     message: "note created succesfully",
   });
 });
+
+// fronend request kar raha hai data backend se...
 
 app.get("/notes" , (req , res) =>{
     res.status(200).json({
