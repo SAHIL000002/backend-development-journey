@@ -71,7 +71,7 @@ console.log(g.reverse()); // output : [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
 // 9. sort()
 
 let h = [4, 5, 2, 8, 4, 3];
-console.log(h.sort());
+console.log(h.sort()); // it sort the element as a string. if we write 2,3,4,10,9,4   than it sort as 10,2,3,4,4,9  
 
 // sort in ascending order
 
